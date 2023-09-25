@@ -13,7 +13,7 @@ public class test {
         int tolv = 0;
         int ens = 0; 
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i <= 1000; i++) {
             if (terning == 2) {
                 to++;
                 ens++;
@@ -64,4 +64,4 @@ public class test {
         System.out.println("10 = " + ti);
         System.out.println("12 = " + tolv);
         System.out.println("Dobbel = " + dobbel);    
-} 
+} }
