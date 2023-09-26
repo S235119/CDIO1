@@ -3,6 +3,7 @@ public class spil {
     var sc = new java.util.Scanner(System.in); 
     
     System.out.println("Spillet Starter");
+
         var point1 = 0;
         var point2 = 0;
         var i = 0;
@@ -39,15 +40,20 @@ public class spil {
         i++;
 
     }
+
+    
+
     System.out.println("Spillet er slut du har vundet : )");
     sc.close();
     
 }
+
     static int slaaTerning(int t) {
         int terning=0;
         for (int i=1; i<=t; i++){
             terning = (int) (Math.random()*6+1);
         }
         return terning;
+
     }
 }
