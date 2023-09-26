@@ -30,9 +30,10 @@ public class spil {
             }
 
         i++;
-        
+
     }
     System.out.println("Spillet er slut du har vundet : )");
     sc.close();
+    
 }
 }
