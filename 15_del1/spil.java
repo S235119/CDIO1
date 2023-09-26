@@ -3,20 +3,28 @@ public class spil {
     var sc = new java.util.Scanner(System.in); 
     
     System.out.println("Spillet Starter");
-    var point = 0;
+    int point = 0;
     while (point < 40){
         sc.nextLine();
-
-        var sum = 0;
-        for (int i=0; i<2; i++){
-            int terning = (int) (Math.random()*6+1);
-            sum += terning;
-        }
+        int terning1 = slaaTerning(1);
+        int terning2 = slaaTerning(2);
+        int sum = terning1 + terning2;
         System.out.println(sum);
+        if (terning1 == terning2) {
+            System.out.println("Du har slået to: " +terning1 + "'ere");
+        }
         point += sum;
+
         System.out.println("Du er på: " +point+ " point");
 }
     System.out.println("Spillet er slut du har vundet : )");
     sc.close();
 }
+static int slaaTerning(int t) {
+    int terning=0;
+    for (int i=1; i<=t; i++){
+        terning = (int) (Math.random()*6+1);
+    }
+    return terning;
+    }
 }
