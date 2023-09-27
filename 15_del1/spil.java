@@ -9,7 +9,7 @@ public class spil {
         var point1 = 0;
         var point2 = 0;
         var i = 0;
-    while (point1 < 40 && point2 < 40){
+    while (sc.hasNextLine()){
         sc.nextLine();
         var sum1 = 0;
         var sum2 = 0;
@@ -22,7 +22,12 @@ public class spil {
 
                 System.out.println(sum1);
                 point1 += sum1;
-                if (sum1 == 2) {
+                if (point1>=40 && terning1 == terning2){
+                    System.out.println("Spiller 1");
+                    break;
+                }else if (point1>=40) {
+                    System.out.println("Du slog ikke to ens du skal slå to ens for at vinde");
+                }else if (sum1 == 2) {
                     point1 = 0;
                     System.out.println("Du slog to 1'ere, og mistede alle dine point : (");
                 } else if (terning1 == terning2) {
@@ -45,7 +50,12 @@ public class spil {
 
                 System.out.println(sum2);
                 point2 += sum2;
-                if (sum2 == 2) {
+                 if (point2>=40 && terning1 == terning2){
+                    System.out.println("Spiller 1");
+                    break;
+                }else if (point2>=40) {
+                    System.out.println("Du slog ikke to ens du skal slå to ens for at vinde");
+                } else if (sum2 == 2) {
                     point2 = 0;
                     System.out.println("Du slog to 1'ere, og mistede alle dine point : (");
                 } else if (terning1 == terning2) {
@@ -65,29 +75,11 @@ public class spil {
         i++;
 
     }
-    i++;
-    while (terning1 != terning2) {
-        sc.nextLine();
-        terning1 = slaaTerning(1);
-        terning2 = slaaTerning(2);
-
-        if (i % 2 == 0) {
-            //spiller 1
-        } else {
-            //spiller 2
-        }
-        //ikke færdig. Lader spilleren med over 40 point slå igen, selvom de ikke fik 2 ens
-        //skal finde en måde at komme ud af loopet, og gøre så både spiller 1 og 2 slår
-        //et eller andet er ret galt lige nu
-        //skal indføre spiller 1 og 2 i dette loop
-
-    }
-
-    
-    System.out.println("Spillet er slut du har vundet : )");
+    System.out.println("Du har vundet : )");
+    System.out.println("Spillet er slut");
     sc.close();
+    }
     
-}
 
     static int slaaTerning(int t) {
         int terning=0;
