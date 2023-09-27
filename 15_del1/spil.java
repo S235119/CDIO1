@@ -2,7 +2,7 @@ public class spil {
     public static void main(String[] args) {
     var sc = new java.util.Scanner(System.in); 
     
-    System.out.println("Spillet Starter");
+    System.out.println("Spillet Starter, tryk enter for at slå med terningerne");
 
         int terning1 = 0;
         int terning2 = 0;
