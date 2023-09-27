@@ -64,4 +64,4 @@ public class test {
         System.out.println("10 = " + ti);
         System.out.println("12 = " + tolv);
         System.out.println("Dobbel = " + dobbel);    
-} }
+} 
