@@ -82,8 +82,6 @@ public class spil {
         //skal indføre spiller 1 og 2 i dette loop
 
     }
-
-    
     System.out.println("Spillet er slut du har vundet : )");
     sc.close();
     
@@ -97,4 +95,5 @@ public class spil {
         return terning;
 
     }
+
 }
