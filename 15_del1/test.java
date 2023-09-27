@@ -1,19 +1,20 @@
 public class test {
 
-        int to = 0;
-        int tre = 0;
-        int fire = 0;
-        int fem = 0;
-        int seks = 0;
-        int syv = 0;
-        int otte = 0;
-        int ni = 0;
-        int ti = 0;
-        int elleve = 0;
-        int tolv = 0;
-        int ens = 0; 
 
-        for (int i = 0; i <= 1000; i++) {
+        double to = 0.0;
+        double tre = 0.0;
+        double fire = 0.0;
+        double fem = 0.0;
+        double seks = 0.0;
+        double syv = 0.0;
+        double otte = 0.0;
+        double ni = 0.0;
+        double ti = 0.0;
+        double elleve = 0.0;
+        double tolv = 0.0;
+        double ens = 0.0;
+
+        for (int i = 0.0; i <= (1000.0); i++) {
             if (terning == 2) {
                 to++;
                 ens++;
@@ -53,15 +54,31 @@ public class test {
             }
         }
 
-        System.out.println("2 = " + to);
-        System.out.println("3 = " + tre);
-        System.out.println("4 = " + fire);
-        System.out.println("5 = " + fem);
-        System.out.println("6 = " + seks);
-        System.out.println("7 = " + syv);
-        System.out.println("8 = " + otte);
-        System.out.println("9 = " + ni);
-        System.out.println("10 = " + ti);
-        System.out.println("12 = " + tolv);
-        System.out.println("Dobbel = " + dobbel);    
+        double antalto = (to / 1000.0 * 100.0);
+        double antaltre = (tre / 1000.0 * 100.0);
+        double antalfire = (fire / 1000 * 100);
+        double antalfem = (fem / 1000 * 100);
+        double antalseks = (seks / 1000 * 100);
+        double antalsyv = (syv / 1000 * 100);
+        double antalotte = (otte / 1000 * 100);
+        double antalni = (ni / 1000 * 100);
+        double antalti = (ti / 1000 * 100);
+        double antalelleve = (elleve / 1000 * 100);
+        double antaltolv = (tolv / 1000 * 100);
+        double antalens = (ens / 1000 * 100);
+
+
+
+        System.out.println("forskel mellem teorien og det reelle er: " + (antalto - (1/36)) + " for 2");
+        System.out.println("forskel mellem teorien og det reelle er: " + tre + " for 3");
+        System.out.println("forskel mellem teorien og det reelle er: " + fire + " for 4");
+        System.out.println("forskel mellem teorien og det reelle er: " + fem + " for 5");
+        System.out.println("forskel mellem teorien og det reelle er: " + seks + " for 6");
+        System.out.println("forskel mellem teorien og det reelle er: "+ syv + " for 7");
+        System.out.println("forskel mellem teorien og det reelle er: " + otte + " for 8");
+        System.out.println("forskel mellem teorien og det reelle er: " + ni + " for 9");
+        System.out.println("forskel mellem teorien og det reelle er: " + ti + " for 10");
+        System.out.println("forskel mellem teorien og det reelle er: " + elleve + " for 11");
+        System.out.println("forskel mellem teorien og det reelle er: " + tolv + " for 12");
+        System.out.println("forskel mellem teorien og det reelle er: " + ens + " for dobbel");    
 } 
