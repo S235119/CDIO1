@@ -80,5 +80,5 @@ public class test {
         System.out.println("forskel mellem teorien og det reelle er: " + ti + " for 10");
         System.out.println("forskel mellem teorien og det reelle er: " + elleve + " for 11");
         System.out.println("forskel mellem teorien og det reelle er: " + tolv + " for 12");
-        System.out.println("forskel mellem teorien og det reelle er: " + ens + " for dobbel");    
+        System.out.println("forskel mellem teorien og det reelle er: " + ens + " for dobbels");    
 } 
