@@ -1,84 +1,95 @@
 public class test {
+    public static void main (String[] args){
 
+        int to = 0;
+        int tre = 0;
+        int fire = 0;
+        int fem = 0;
+        int seks = 0;
+        int syv = 0;
+        int otte = 0;
+        int ni = 0;
+        int ti = 0;
+        int elleve = 0;
+        int tolv = 0;
+        int ens = 0;
 
-        double to = 0.0;
-        double tre = 0.0;
-        double fire = 0.0;
-        double fem = 0.0;
-        double seks = 0.0;
-        double syv = 0.0;
-        double otte = 0.0;
-        double ni = 0.0;
-        double ti = 0.0;
-        double elleve = 0.0;
-        double tolv = 0.0;
-        double ens = 0.0;
-
-        for (int i = 0.0; i <= (1000.0); i++) {
-            if (terning == 2) {
+        for (int i = 0; i <= (1000); i++) {
+            int terning1 = slaaTerning(1);
+            int terning2 = slaaTerning(2);
+            int sum = terning1 + terning2;
+            if (sum == 2) {
                 to++;
                 ens++;
-            } else if (terning == 3) {
+            } else if (sum == 3) {
                 tre++;
-            } else if (terning == 4 && terning == dobbel) {
+            } else if (sum == 4 && terning1 == terning2) {
                 fire++;
                 ens++;
-            } else if (terning == 4) {
+            } else if (sum == 4) {
                 fire++;
-            } else if (terning == 5) {
+            } else if (sum == 5) {
                 fem++;
-            } else if (terning == 6 && terning == dobbel) {
+            } else if (sum == 6 && terning1 == terning2) {
                 seks++;
                 ens++;
-            } else if (terning == 6) {
+            } else if (sum == 6) {
                 seks++;
-            } else if (terning == 7) {
+            } else if (sum == 7) {
                 syv++;
-            } else if (terning == 8 && terning == dobbel) {
+            } else if (sum == 8 && terning1 == terning2) {
                 otte++;
                 ens++;
-            } else if (terning == 8) {
+            } else if (sum == 8) {
                 otte++;
-            } else if (terning == 9) {
+            } else if (sum == 9) {
                 ni++;
-            } else if (terning == 10 && terning == dobbel) {
+            } else if (sum == 10 && terning1 == terning2) {
                 ti++;
                 ens++;
-            } else if (terning == 10) {
+            } else if (sum == 10) {
                 ti++;
-            } else if (terning == 11) {
+            } else if (sum == 11) {
                 elleve++;
-            } else if (terning == 12) {
+            } else if (sum == 12) {
                 tolv++;
                 ens++;
             }
         }
 
-        double antalto = (to / 1000.0 * 100.0);
-        double antaltre = (tre / 1000.0 * 100.0);
-        double antalfire = (fire / 1000 * 100);
-        double antalfem = (fem / 1000 * 100);
-        double antalseks = (seks / 1000 * 100);
-        double antalsyv = (syv / 1000 * 100);
-        double antalotte = (otte / 1000 * 100);
-        double antalni = (ni / 1000 * 100);
-        double antalti = (ti / 1000 * 100);
-        double antalelleve = (elleve / 1000 * 100);
-        double antaltolv = (tolv / 1000 * 100);
-        double antalens = (ens / 1000 * 100);
+        double realto = 1.0 / 36.0 * 1000.0;
+        double realtre = 2.0 / 36.0 * 1000.0;
+        double realfire = 3.0 / 36.0 * 1000.0;
+        double realtfem = 4.0 / 36.0 * 1000.0;
+        double realseks = 5.0 / 36.0 * 1000.0;
+        double realsyv = 6.0 / 36.0 * 1000.0;
+        double realotte = 5.0 / 36.0 * 1000.0;
+        double realni = 4.0 / 36.0 * 1000.0;
+        double realti = 3.0 / 36.0 * 1000.0;
+        double realelve = 2.0 / 36.0 * 1000.0;
+        double realtolv = 1.0 / 36.0 * 1000.0;
+        double realens = 6.0 / 36.0 *1000.0;
 
 
-
-        System.out.println("forskel mellem teorien og det reelle er: " + (antalto - (1/36)) + " for 2");
-        System.out.println("forskel mellem teorien og det reelle er: " + tre + " for 3");
-        System.out.println("forskel mellem teorien og det reelle er: " + fire + " for 4");
-        System.out.println("forskel mellem teorien og det reelle er: " + fem + " for 5");
-        System.out.println("forskel mellem teorien og det reelle er: " + seks + " for 6");
-        System.out.println("forskel mellem teorien og det reelle er: "+ syv + " for 7");
-        System.out.println("forskel mellem teorien og det reelle er: " + otte + " for 8");
-        System.out.println("forskel mellem teorien og det reelle er: " + ni + " for 9");
-        System.out.println("forskel mellem teorien og det reelle er: " + ti + " for 10");
-        System.out.println("forskel mellem teorien og det reelle er: " + elleve + " for 11");
-        System.out.println("forskel mellem teorien og det reelle er: " + tolv + " for 12");
-        System.out.println("forskel mellem teorien og det reelle er: " + ens + " for dobbel");    
-} 
+        System.out.println("Teoretisk udfalde: " + realto + " reelle udfald: " + to + " for 2");
+        System.out.println("Teoretisk udfalde: " + realtre + " reelle udfald: " + tre + " for 3");
+        System.out.println("Teoretisk udfalde: " + realfire + " reelle udfald: " + fire + " for 4");
+        System.out.println("Teoretisk udfalde: " + realtfem + " reelle udfald: " + fem + " for 5");
+        System.out.println("Teoretisk udfalde: " + realseks + " reelle udfald: " + seks + " for 6");
+        System.out.println("Teoretisk udfalde: " + realsyv + " reelle udfald: " + syv + " for 7");
+        System.out.println("Teoretisk udfalde: " + realotte + " reelle udfald: " + otte + " for 8");
+        System.out.println("Teoretisk udfalde: " + realni + " reelle udfald: " + ni + " for 9");
+        System.out.println("Teoretisk udfalde: " + realti + " reelle udfald: " + ti +" for 10");
+        System.out.println("Teoretisk udfalde: " + realelve + " reelle udfald: " + elleve + " for 11");
+        System.out.println("Teoretisk udfalde: " + realtolv + " reelle udfald: " + tolv + " for 12");
+        System.out.println("Teoretisk udfalde: " + realens + " reelle udfald: " + ens + " for dobbel");    
+    }
+        static int slaaTerning(int t) {
+            int terning=0;
+            for (int i=1; i<=t; i++){
+                terning = (int) (Math.random()*6+1);
+            }
+            return terning;
+    
+        }
+    }
